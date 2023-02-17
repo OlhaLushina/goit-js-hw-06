@@ -12,8 +12,7 @@ function onBtnCreateClick(event) {
 }
 
 function onBtnDestroyClick(event) {
-  const boxes = document.querySelector('#boxes');
-  boxes.innerHTML = '';
+  destroyBoxes();
 }
 
 function onNumberElChange(event) {
@@ -35,6 +34,11 @@ function createBoxes(amount) {
   const boxes = document.querySelector('#boxes');
   boxes.append(...divList);
  }
+}
+
+function destroyBoxes() {
+  const boxes = document.querySelector('#boxes');
+  boxes.innerHTML = '';
 }
 
 function getRandomHexColor() {
