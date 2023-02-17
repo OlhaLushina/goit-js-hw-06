@@ -17,6 +17,6 @@ function onFormSubmit(event) {
             password
         }
         console.log(data);
-        form.reset();
+        event.currentTarget.reset();
     }
 }
